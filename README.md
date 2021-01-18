@@ -20,3 +20,5 @@
 適当な画像とマスクを用意してアルゴリズムを適用するだけ。openCVの別アルゴリズムで補修した結果も用意してMSEを比較してみる。
 
 ### 元画像
+
+![babel](https://github.com/sleeper1729/YOT/blob/main/inpainting/babel.jpg)
