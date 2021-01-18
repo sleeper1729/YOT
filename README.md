@@ -39,9 +39,9 @@
 
 openCVのcv2.inpaintを使ったのがこれ。元画像とのMSEは0.7172 (マスク部分だけだと83.92)。
 
-![opencv](https://github.com/sleeper1729/YOT/blob/main/inpainting/opencv.png)
+openCVのアルゴリズムは[Digital image inpainting based on markov random field](http://olivier-augereau.com/docs/2004JGraphToolsTelea.pdf)。
 
-多少良くなった気もする。
+![opencv](https://github.com/sleeper1729/YOT/blob/main/inpainting/opencv.png)
 
 ## 備考
 
