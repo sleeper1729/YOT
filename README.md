@@ -21,4 +21,9 @@
 
 ### 元画像
 
-![babel](https://github.com/sleeper1729/YOT/blob/main/inpainting/babel.jpg)
+![babel](https://github.com/sleeper1729/YOT/blob/main/inpainting/original.jpg)
+こいつに下のように黒い円を描く。
+
+### マスク画像
+
+![masked](https://github.com/sleeper1729/YOT/blob/main/inpainting/masked.jpg)
