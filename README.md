@@ -47,6 +47,6 @@ openCVのアルゴリズムは[Digital image inpainting based on markov random f
 
 この例を見るに、左下のように、多少複雑な構造のある部分の修復は比較的難しそう。
 
-[Fields of Experts: a framework for learning image priors](https://ieeexplore.ieee.org/document/1467533)には、学習を使ってもう少し周囲の構造を反映するように補修できるらしい。
+[Fields of Experts: a framework for learning image priors](https://ieeexplore.ieee.org/document/1467533)には、学習を使ってもう少し周囲の構造を反映するように補修するアルゴリズムがのってるらしい。
 
 また、ループのある場合の確率伝播法は必ずしも収束しないので、他の手段で分布を計算して比較したい。
