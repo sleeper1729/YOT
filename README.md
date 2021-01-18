@@ -1,5 +1,5 @@
-# YOT
-"Digital image inpainting based on markov random field" https://ieeexplore.ieee.org/document/1631558　の実装
+# Digital image inpainting based on markov random field
+[Digital image inpainting based on markov random field](https://ieeexplore.ieee.org/document/1631558)の実装
 
 ## 論文の概要
 この論文では、一部に欠損が生じた画像が与えられた時に、欠損部分を補完して元の画像を得るアルゴリズムを与えている。
@@ -22,8 +22,31 @@
 ### 元画像
 
 ![babel](https://github.com/sleeper1729/YOT/blob/main/inpainting/original.png)
+
 こいつに下のように黒い円を描く。
 
 ### マスク画像
 
 ![masked](https://github.com/sleeper1729/YOT/blob/main/inpainting/masked.png)
+
+この黒い部分を修復したい。
+
+## 結果
+
+論文の実装結果がこれ。元画像とのMSEは0.6918 (マスク部分だけだと80.95)。
+
+![repaired](https://github.com/sleeper1729/YOT/blob/main/inpainting/repaired.png)
+
+openCVのcv2.inpaintを使ったのがこれ。元画像とのMSEは0.7172 (マスク部分だけだと83.92)。
+
+![opencv](https://github.com/sleeper1729/YOT/blob/main/inpainting/opencv.png)
+
+多少良くなった気もする。
+
+## 備考
+
+この例を見るに、左下のように、多少複雑な構造のある部分の修復は比較的難しそう。
+
+[Fields of Experts: a framework for learning image priors](https://ieeexplore.ieee.org/document/1467533)には、学習を使ってもう少し周囲の構造を反映するように補修できるらしい。
+
+また、ループのある場合の確率伝播法は必ずしも収束しないので、他の手段で分布を計算して比較したい。
