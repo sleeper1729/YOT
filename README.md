@@ -14,6 +14,7 @@
 
 ## 実装
 
+[ここ](https://github.com/sleeper1729/YOT/blob/main/inpainting/inpainting.ipynb)
 
 ## 実験方法
 
